@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Procedures/Fonctions</title>
+		<link rel="stylesheet" type="text/css" href="stylep5.css">
+	</head>
+	
+	<body>
+	
+	<h2><center>Les procédures</center>
+	<br>
+<br>PROCEDURE <strong>Nom_de_la_procédure</strong>(Liste des paramètres : type)
+<br>
+<br> VAR : 
+	<br>Liste des variables
+<br>DEBUT 										
+<br>{Corps de la procédure}
+<br><strong>LISTE DES ACTIONS</strong> 						
+<br>{La liste ne doit pas être vide}
+<br>FINPROCEDURE
+<br><br>
+
+	<br><center>Les fonctions</center>
+	<br>
+
+<br>Fonction <strong>Nom_de_la_fonction</strong>(liste des paramètres : type): type_fonction
+<br>Var :
+	<br>Liste des variables
+<br>DEBUT
+<br>{corps de la fonction}
+<br><strong>LISTE DES ACTIONS</strong> 						
+<br>{la liste ne doit pas être vide}
+<br>Nom_de_la_fonction <- résultat des calculs 
+<br>FINFONCTION
+<br><br></h1>
+
+
+	<h1>Paramètres par valeur</h2>
+
+	<br>Passé un paramètre par valeur reviens à n’utiliser que la valeur de la variable au moment où elle est passée en paramètre. 
+	<br>A la fin de l’exécution du sous-programme, la variable conservera sa valeur initiale
+	<br><br>
+	<br>Syntaxe : 
+	<br>PROCEDURE <strong>nom_procedure</strong> (param1 : type1 ; param2, param3 : type 2)
+	<br>FONCTION <strong>nom_fonction</strong> (param1 : type 1 ; param2, param3 : type2) : Type 
+<br><br>
+
+
+
+	<h1>Paramètres</h1>
+<br><br>
+<br>UNE VARIABLE DOIT ETRE PLACER EN PARAMETRE QUAND ELLE DOIT ETRE UTILISER DANS UN AUTRE SOUS PROGRAMME (AUTRE PROCEDURE/FONCTIONS)
+<br>Paramètres formels : Qui sont la définition du nombre et du type de valeurs que devra recevoir le sous-programme pour se mettre en route avec succès. 
+<br>On déclare les paramètres formels pendant la déclaration du sous-programme.
+<br>Paramètres effectifs : Qui sont des valeurs réelles (constantes ou variables) reçues par le sous-programme au cours de l’exécution du bloc principal. 
+<br>On les définit indépendamment à chaque appel du sous-programme dans l’algorithme principal. 
+<br><br>
+<br>1)	Utiliser sa valeur de la variable et à la sortie du sous-programme lui restituer cette valeur malgré les éventuelles modifications subies. 
+On parle de passage de paramètre par valeur.
+<br>2)	 Utiliser la variable elle-même et lui attribuer dans le bloc principal des modifications rencontrées dans le sous-programme. On parle de passage de paramètre par adresse.
+<br><br>NB : Un sous-programme avec paramètres est très utile parce qu’il permet de répéter une série d’opérations complexes pour des valeurs qu’on ne connait pas à l’avance. 
+<br><br><h2><center>Exemple Algorithme : </center>
+<br><p>Algorithme <i>produit</i>
+<br>Procedure ProMultiplier(nb1,nb2 :entier)
+<br>VAR 
+	<br>Res : Entier
+<br>DEBUT 
+	<br>Res <-nb1*nb2
+	<br>Ecrire(‘’Le résultat est ‘’&Res)
+<br>FINPROCEDURE</h2></p>
+<center><a href="Accueil.html">Retour au sommaire</a></center>
+
+	
+	
+	
+	</body>

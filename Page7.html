@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Les enregistrements</title>
+		<link rel="stylesheet" type="text/css" href="stylep7.css">
+	</head>
+	
+	<body>
+	La déclaration d’un objet de type enregistrement se fait de manière suivante : 
+<br>Synthaxe : 
+	<br>Type <i>Nom_objet</i> = Enregistrement 
+		<i>Champ 1</i> : <i>Type 1</i>
+		<i>Champ 2</i> : <i>Type 2</i>
+		<i>Champ n</i> : <i>Type n</i>
+<br>Remarques : 
+<br><br><i>Champ i</i> est une variable à part entière qui représente une propriété de l’objet 
+<br><i>type i</i> est le type de <champ i> et est indépendant des autres types de l’objet. Ainsi il peut être simple ou composé, à condition d’être défini avant l’enregistrement. 
+<br><br>Ex : 
+<br>Algorithme <i>les_voitures </i>
+<br>Type voitures = enregistrement 
+<br>Immatriculation : Cahine de caractères 
+<br>Couleur : Chaine de caractères 
+<br>Puissance : entier 
+<br>Garantie : booléen 
+<br>FinEnregistrement 
+<br>Var p : voitures 
+<br>Debut 
+<br>//Instructions 
+<br>Fin 
+<br><br>
+
+<br>Un enregistrement peut faire appel à un autre (ex on fait un enregistrement de « calendrier » (Jour/Mois /Annee) 
+et on fait appel à celui-ci par la suite pour une date d’une personne ou autre)
+<br>Exemple : 
+<br>Algorithme etudiants 
+<br>Const PENSION <- 350 000 
+<br>EFFECTIF <- 5 
+<br>Type calendrier = enregistrement 
+	<br>Jour : entier 
+	<br>Mois : entier
+	<br>Annee : entier 
+<br>FinEnregistrement 
+<br>Type etudiants = enregistrement 
+	<br>Nom : Chaine 
+	<br>Prenom : Chaine 
+	<br>Age : entier 
+	<br>Sexe : chaine 
+	<br>Date_naiss : calendrier
+	<br>Date_inscription : calendrier 
+	<br>Versements : réel 
+	<br>Solde : réel 
+<br>FinEnregistrement
+<br>Var 
+	<br>I :entier 
+	<br>V : Tableau [1..Effectif] de etudiants
+<br>Debut 
+<br>POUR i<-1 A effectif FAIRE 
+<br>Lire(v[i].nom)
+<br>Lire(v[i].prenom)
+<br>Lire(v[i].age)
+<br>Lire(v[i].sexe)
+<br>Lire(v[i].date_naiss.jour)
+<br>Lire(v[i].date_naiss.mois)
+<br>Lire(v[i].date_naiss.annee)
+<br>Lire(v[i].date_inscription.jour)
+<br>Lire(v[i].date_inscription.mois)
+<br>Lire(v[i].date_inscription.annee)
+<br>Lire(v[i].versements)
+<br>V[i].solde <- v[i].versements – PENSION 
+<br>FINPOUR 
+<br>FIN 
+<center><a href="Accueil.html">Retour au sommaire</a></center>
+
+	
+	
+	
+	</body>

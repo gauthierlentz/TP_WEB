@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Les tableaux</title>
+		<link rel="stylesheet" type="text/css" href="stylep6.css">
+	</head>
+	
+	<body>
+	<h2>Les tableaux à une dimension (vecteurs) :</h2>
+<br>Syntaxe : Type<strong> nom_de_tableaux</strong>=Tableau[1..N] de <i>TypeElt</i>
+	<h2>Les tableaux à deux dimensions : </h2>
+<br>Syntaxe : Type<strong> nom_du_tableau</strong>=Tableau[1..N,1..N] de <i>TypeElt</i>
+<br><br>
+<h2>Exemple 1</h2>
+<br>Algorithme Tableau
+<br>Const 
+	<br>MAX : ENTIER <-50
+<br>VAR 
+	<br>T1 : Tableau [1..MAX] de CHAINE 
+	<br>T2 : Tableau[1..5,1..10 de ENTIER 
+<br>DEBUT 
+	<br>T1[1]<-‘a’
+	<br>ECRIRE T1[1]
+	<br>T2[2,7]<-12
+	<br>ECRIRE T2[2,7]
+<br>FIN
+<br><br> 
+_________________________________________________________________________________
+
+<br>Algorithme INITTAB 
+<br>CONST 
+	<br>MAX :ENTIER<-50 
+<br>Procedure InitTabT1(T1 :Tableau[1..MAX] de ENTIER)
+<br>VAR 
+	<br>I :ENTIER 
+<br>DEBUT
+	<br>POUR i de 1 A MAX FAIRE 
+		<br>T1[i]<-0
+	<br>FINPOUR 
+<br>FINPROCEDURE 
+
+<br><br>
+
+
+<br>Procedure initTabT2(T2 :Tableau[1..5,1..10] de ENTIER) 
+<br>VAR 
+	<br>I : ENTIER 
+	<br>J : ENTIER 
+<br>DEBUT 
+	<br>POUR i de 1 A 5 FAIRE 
+		<br>POUR j de 1 A 10 FAIRE 
+			<br>T2[i,j]<-0
+		<br>FINPOUR	
+	<br>FINPOUR 
+<br>FINPROCEDURE 
+<br><br>
+
+<br>//Programme principal 
+<br>VAR 
+	<br>T1 : Tableau[1..MAX] de ENTIER 
+	<br>T2 : Tableau[1..5,1..10] de ENTIER 
+<br>DEBUT 
+	<br>InitTabT1(T1) 
+	<br>InitTabT2(T2) 
+<br>FIN 
+<br><br>ATTENTION : 
+<br>Une chaine est un tableau de 1 dimension en algo 
+<center><a href="Accueil.html">Retour au sommaire</a></center>
+
+	
+	
+	</body>

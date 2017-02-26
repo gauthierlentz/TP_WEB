@@ -1,0 +1,19 @@
+body{
+	background-image: url("Images/background.png");
+	background-repeat: no-repeat;
+	background-size : cover;
+}
+	
+h2{
+	border: 6px inset;
+	border-color: red;
+	border-radius:60px;
+	background-color:#F7B377;
+	box-shadow:6px 6px 6px red;
+	width: 75%;
+	margin: 0 auto;
+}
+
+p{
+	margin-left : 30 px;
+}
